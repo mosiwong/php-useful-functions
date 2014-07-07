@@ -5,7 +5,7 @@
  *
  * @return string mime type or false
  */
-function rdp_mime_get($file) {
+function mime_get($file) {
     $s_ret = false;
     $b_existslegacy = function_exists("mime_content_type");
     if (function_exists("finfo_file")) {
